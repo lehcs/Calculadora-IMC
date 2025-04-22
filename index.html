@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <script src="imc.js"></script>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+    <p>Utilize ponto no lugar de virgula.</p>
+    <label for="peso">Peso (kg) -></label>
+    <input type="number" id="peso">
+
+    <label for="altura">Altura (m) -></label>
+    <input type="number" id="altura">
+
+    <button onclick="calcularimc()">Calcular</button>
+    
+    <p id="resultado"></p>
+    <p id="imc"></p>
+    <ul>
+        <li>IMC < 18,5kg/m2 - baixo peso.</li>
+        <li>IMC >18,5 até 24,9kg/m2 - eutrofia (peso adequado)</li>
+        <li>IMC ≥25 até 29,9kg/m2 - sobrepeso. </li>
+        <li>IMC >30,0kg/m2 até 34,9kg/m2 - obesidade grau 1. </li>
+        <li>IMC >35kg/m2 até 39,9kg/m2 - obesidade grau 2. </li>
+        <li>IMC > 40kg/m2 - obesidade extrema.</li>
+    </ul>
+</body>
+</html>
